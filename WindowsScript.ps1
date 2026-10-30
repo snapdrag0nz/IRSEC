@@ -19,3 +19,8 @@ net localgroup Administrators
 
 Write-Host ""
 Write-Host "Get-LocalUser"
+Get-LocalUser
+
+Write-Host ""
+Write-Host "SMB1 CHECK"
+Get-SmbServerConfiguration | Select EnableSMB2
